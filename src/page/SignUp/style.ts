@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
 
-import signInBackgroundImg from '../../assets/sigin-bg.png';
+import signInBackgroundImg from '../../assets/signUp.png';
 
 export const Container = styled.div`
     height: 100vh;
@@ -15,7 +15,7 @@ export const Container = styled.div`
     }
 `;
 export const Content = styled.div`
-    margin-top: 120px;
+    margin: 90px 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -34,17 +34,10 @@ export const Content = styled.div`
     }
 
     a {
-        color: #f4ede8;
-        text-decoration: none;
-        transition: color 0.2s;
-        margin-bottom: 80px;
+        display: flex;
+        align-items: center;
 
-        &:hover {
-            color: ${shade(0.2, '#f4ede8')};
-        }
-    }
-    > a {
-        color: #ff9000;
+        color: #f4ede8;
         text-decoration: none;
         transition: color 0.2s;
 
