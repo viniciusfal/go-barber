@@ -1,7 +1,6 @@
 import React from 'react';
 
-import { AuthProvider } from './hooks/AuthContext';
-import ToastContainer from './components/ToastContainer';
+import AppProvider from './hooks';
 import GlobalStyle from './styles/global';
 import SignIn from './page/SignIn';
 // import SignUp from './page/SignUp';
@@ -9,13 +8,11 @@ import SignIn from './page/SignIn';
 const App: React.FC = () => {
     return (
         <>
-            <AuthProvider>
+            <AppProvider>
                 <SignIn />
+            </AppProvider>
 
-                <ToastContainer />
-
-                <GlobalStyle />
-            </AuthProvider>
+            <GlobalStyle />
         </>
     );
 };
