@@ -10,7 +10,7 @@ export const Container = styled.div`
         padding: 0 16px;
         width: 100%;
         color: #312e38;
-        margin: 24px 0;
+        margin: 18px 0;
         font-weight: 500;
         transition: background-color 0.2s;
 
